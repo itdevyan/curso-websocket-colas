@@ -73,6 +73,10 @@ class TicketControl {
     return ticket;
   }
 
+  pendientes() {
+    return this.tickets.length;
+  }
+
   guardarDB() {
     const dbPath = path.join(__dirname, "../db/data.json");
     // respecto a toJson, de porque no lleva parentesis, es porque es un getter
